@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pack Your Bags</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<script src="script.js"></script>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="https://res.cloudinary.com/dof58sshy/image/upload/v1751108772/ChatGPT_Image_Jun_28_2025_12_07_29_PM_p1mfb6.png" alt="Pack Your Bags Logo" />
+      <span>Pack Your Bags</span>
+    </div>
+   <nav>
+  <ul>
+    <li><a href="#" onclick="showInfo('regions', this)">Popular Regions</a></li>
+    <li><a href="#" onclick="showInfo('destinations', this)">Destinations</a></li>
+    <li><a href="#" onclick="showInfo('landmarks', this)">Landmarks</a></li>
+    <li><a href="#" onclick="showInfo('explore', this)">Explore</a></li>
+  </ul>
+</nav>
+
+<!-- Add this just after nav inside the header -->
+<div id="infoBox" class="info-box" style="display: none;"></div>
+
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Discover The Best You</h1>
+      <p>Uncover new places, new passions, and a new you — with Pack Your Bags, near or far.</p>
+      <div class="search-box-container">
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search for a city..." />
+    <button onclick="handleSearch()">Search</button>
+  </div>
+  <div id="searchResults" class="search-results"></div>
+</div>
+      </section>
+    <div id="infoBox" class="info-box" style="display: none;"></div>
+
+<!-- SECTION 2: Popular Indian Regions -->
+<section class="popular-regions">
+  <h2>Popular Getaways</h2>
+  <div class="region-list">
+    <div class="region-card" onclick="showPlacesIndia('gokarna')">Gokarna</div>
+    <div class="region-card" onclick="showPlacesIndia('udaipur')">Udaipur</div>
+    <div class="region-card" onclick="showPlacesIndia('kerala')">Kerala</div>
+    <div class="region-card" onclick="showPlacesIndia('goa')">Goa</div>
+  </div>
+
+  <div id="indiaPlacesContainer" class="places-india-container">
+    <!-- City places will appear here -->
+  </div>
+</section>
+
+<!-- SECTION 3: Explore By City -->
+<section class="explore-section">
+  <h2>Where to next?</h2>
+  <div class="city-cards">
+    <div class="city-card" onclick="showPlaces('japan')">Japan</div>
+    <div class="city-card" onclick="showPlaces('singapore')">Singapore</div>
+    <div class="city-card" onclick="showPlaces('uae')">UAE</div>
+    <div class="city-card" onclick="showPlaces('thailand')">Thailand</div>
+  </div>
+
+  <div class="places-list" id="placesList">
+    <!-- Places will appear here dynamically -->
+  </div>
+</section>
+<!-- SECTION 4: Hotel Listings -->
+<section class="hotel-section">
+  <h2>Recommended Hotels</h2>
+  <div class="hotel-cards">
+    <div class="hotel-card">
+      <h3>The Palm Hotel</h3>
+      <p>Deluxe AC Room with Free WiFi and Breakfast</p>
+      <div class="price">₹4,200/night</div>
+    </div>
+    <div class="hotel-card">
+      <h3>Marina Bay View</h3>
+      <p>Suite with Sea View, Free Access to Pool & Gym</p>
+      <div class="price">₹6,500/night</div>
+    </div>
+    <div class="hotel-card">
+      <h3>Cozy Stay Inn</h3>
+      <p>Budget Room for 2, Air Conditioning, 24x7 Help Desk</p>
+      <div class="price">₹2,800/night</div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 5: Footer -->
+<footer class="footer-section">
+  <div class="footer-container">
+    <div class="footer-col">
+      <h4>About Pack Your Bags</h4>
+      <ul>
+        <li><a href="#">Who we are</a></li>
+        <li><a href="#">Travel Blog</a></li>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Gift Vouchers</a></li>
+        <li><a href="#">Sustainability</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Partners</h4>
+      <ul>
+        <li><a href="#">Partner with us</a></li>
+        <li><a href="#">Affiliate program</a></li>
+        <li><a href="#">Travel Agents</a></li>
+        <li><a href="#">Influencer Hub</a></li>
+        <li><a href="#">Corporate Travel</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <ul>
+        <li><a href="#">User Agreement</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Refund Policy</a></li>
+        <li><a href="#">Cookie Settings</a></li>
+        <li><a href="#">Code of Conduct</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Payment Options</h4>
+      <div class="payment-icons">
+        <img src="https://img.icons8.com/color/48/visa.png" alt="Visa" />
+        <img src="https://img.icons8.com/color/48/mastercard.png" alt="Mastercard" />
+        <img src="https://img.icons8.com/color/48/paypal.png" alt="Paypal" />
+        <img src="https://img.icons8.com/color/48/google-pay.png" alt="Google Pay" />
+        <img src="https://img.icons8.com/color/48/apple-pay.png" alt="Apple Pay" />
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Pack Your Bags. All rights reserved.</p>
+    <div class="footer-social">
+      <a href="#"><img src="https://img.icons8.com/ios-filled/24/facebook-new.png" alt="Facebook" /></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/24/instagram-new.png" alt="Instagram" /></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/24/youtube-play.png" alt="YouTube" /></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/24/tiktok--v1.png" alt="TikTok" /></a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/24/expand-arrow--v1.png" alt="Back to top" /></a>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
