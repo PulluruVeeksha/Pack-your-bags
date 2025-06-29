@@ -12,8 +12,16 @@
 
 ## 📸 Live Demo
 
-🔗 [Click here to explore the live site](https://pulluruveeksha.github.io/Pack-your-bags/)
+🔗 [View on live Demo on Github pages](https://pulluruveeksha.github.io/Pack-your-bags/)
 
 ---
+### 🚀 Tech Stack
+
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white&style=for-the-badge)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white&style=for-the-badge)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black&style=for-the-badge)
+![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white&style=for-the-badge)
+![GitHub Pages](https://img.shields.io/badge/GitHub%20Pages-222222?logo=github&logoColor=white&style=for-the-badge)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?logo=visual-studio-code&logoColor=white&style=for-the-badge)
 
 
